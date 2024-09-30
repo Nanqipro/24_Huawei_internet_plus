@@ -1,0 +1,13 @@
+安装wsl
+wsl -v -l
+wsl --install Ubuntu-20.04
+wsl --shutdown
+wsl --export Ubuntu D:/export.tar
+wsl --unregister Ubuntu
+wsl --import Ubuntu D:\export\ D:\export.tar --version 2
+
+ubuntu2004 config --default-user xxx
+
+cp -r D:/GitHub_local/NCU_projects/Huawei_internet_plus/yolov8 ./
+cp /mnt/c/Users/chs/Desktop/yolov8/Anaconda3-2024.02-1-Linux-x86_64.sh ./
+-i https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple --trusted-host=https://mirrors.tuna.tsinghua.edu.cn/pypi/web/simple

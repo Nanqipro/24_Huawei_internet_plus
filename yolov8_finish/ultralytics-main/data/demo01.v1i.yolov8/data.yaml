@@ -1,0 +1,13 @@
+train: /home/nanqipro01/yolov8/ultralytics-main/data/demo01.v1i.yolov8/train/images
+val: /home/nanqipro01/yolov8/ultralytics-main/data/demo01.v1i.yolov8/valid/images
+test: /home/nanqipro01/yolov8/ultralytics-main/data/demo01.v1i.yolov8/test/images
+
+nc: 10
+names: ['cat', 'chicken', 'cow', 'dog', 'fox', 'goat', 'horse', 'person', 'racoon', 'skunk']
+
+# roboflow:
+#   workspace: yolov8test-vzj2x
+#   project: demo01-cvkj6
+#   version: 1
+#   license: CC BY 4.0
+#   url: https://universe.roboflow.com/yolov8test-vzj2x/demo01-cvkj6/dataset/1

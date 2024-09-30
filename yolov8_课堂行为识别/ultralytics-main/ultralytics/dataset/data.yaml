@@ -1,0 +1,13 @@
+train: C:\\Users\\nanqipro\\Desktop\\yolov8_init\\ultralytics-main\\ultralytics\\dataset\\train\\images
+val: C:\\Users\\nanqipro\\Desktop\\yolov8_init\\ultralytics-main\\ultralytics\\dataset\\valid\\images
+test: C:\\Users\\nanqipro\\Desktop\\yolov8_init\\ultralytics-main\\ultralytics\\dataset\\test\\images
+
+nc: 5
+names: ['drink', 'listen', 'phone', 'trance', 'write']
+
+#roboflow:
+#  workspace: yolov8test-vzj2x
+#  project: -l0xtr
+#  version: 1
+#  license: CC BY 4.0
+#  url: https://universe.roboflow.com/yolov8test-vzj2x/-l0xtr/dataset/1
