@@ -1,0 +1,120 @@
+{
+    "model_algorithm": "video_classification",
+    "model_type": "PyTorch",
+    "runtime": "python3.6",
+    "apis": [
+        {
+            "procotol": "http",
+            "url": "/",
+            "method": "POST",
+            "request": {
+                "Content-type": "multipart/form-data",
+                "data": {
+                    "type": "object",
+                    "properties": {
+                        "input_video": {
+                            "type": "file"
+                        }
+                    },
+                    "required": [
+                        "input_video"
+                    ]
+                }
+            },
+            "response": {
+                "Content-type": "applicaton/json",
+                "data": {
+                    "type": "object",
+                    "properties": {
+                        "result": {
+                            "type": "number",
+                            "type": "array",
+                            "items": [
+                                {
+                                    "type": "array",
+                                    "items": [
+                                        {
+                                            "type": "number",
+                                            "type": "number"
+                                        }
+                                    ],
+                                    "type": "number"
+                                }
+                            ]
+                        }
+                    },
+                    "required": [
+                        "result"
+                    ]
+                }
+            }
+        }
+    ],
+    "dependencies": [
+        {
+            "installer": "pip",
+            "packages": [
+                {
+                    "restraint": "",
+                    "package_version": "",
+                    "package_name": "onnxruntime"
+                },
+                {
+                    "restraint": "",
+                    "package_version": "",
+                    "package_name": "numpy"
+                },
+                {
+                    "restraint": "",
+                    "package_version": "",
+                    "package_name": "scipy"
+                },
+                {
+                    "restraint": "",
+                    "package_version": "",
+                    "package_name": "pandas"
+                },
+                {
+                    "restraint": "EXACT",
+                    "package_version": "1.8.0",
+                    "package_name": "torch"
+                },
+                {
+                    "restraint": "EXACT",
+                    "package_version": "0.9.0",
+                    "package_name": "torchvision"
+                },
+                {
+                    "restraint": "",
+                    "package_version": "",
+                    "package_name": "tqdm"
+                },
+                {
+                    "restraint": "",
+                    "package_version": "",
+                    "package_name": "PyYAML"
+                },
+                {
+                    "restraint": "",
+                    "package_version": "",
+                    "package_name": "Pillow"
+                },
+                {
+                    "restraint": "",
+                    "package_version": "",
+                    "package_name": "matplotlib"
+                },
+                {
+                    "restraint": "",
+                    "package_version": "",
+                    "package_name": "seaborn"
+                },
+                {
+                    "restraint": "",
+                    "package_version": "",
+                    "package_name": "scikit-learn"
+                }
+            ]
+        }
+    ]
+}
