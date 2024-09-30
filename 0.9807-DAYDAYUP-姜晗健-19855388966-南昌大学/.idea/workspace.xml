@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2a13a397-eb57-4712-97bc-51c6d8d8f446" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/../../24_Mathematical_Modeling/数据降重/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../24_Mathematical_Modeling/数据降重/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../24_Mathematical_Modeling/数据降重/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../24_Mathematical_Modeling/数据降重/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../24_Mathematical_Modeling/数据降重/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../24_Mathematical_Modeling/数据降重/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../24_Mathematical_Modeling/数据降重/.idea/数据降重.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../24_Mathematical_Modeling/数据降重/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../24华为开发者大赛/视频分帧测试代码/.idea/test.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../视频分帧测试代码/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../复赛1阶段云侧跑分v0825-最高分0.8849/model/customize_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/../复赛1阶段云侧跑分v0825-最高分0.8849/model/customize_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../复赛1阶段云侧跑分v0825-最高分0.8849/model/run/output0824.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../复赛1阶段云侧跑分v0825-最高分0.8849/model/run/output0824.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2jMMTJrSIQU0mNXUhOZ6rDMjfGg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/GitHub_local/NCU_projects/Huawei_internet_plus/0.9807-DAYDAYUP-姜晗健-19855388966-南昌大学",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="customize_service" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="0.9807-DAYDAYUP-姜晗健-19855388966-南昌大学" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/model" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/model/customize_service.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.customize_service" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="2a13a397-eb57-4712-97bc-51c6d8d8f446" name="更改" comment="" />
+      <created>1721192499304</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1721192499304</updated>
+      <workItem from="1721192500531" duration="647000" />
+      <workItem from="1721193264887" duration="1218000" />
+      <workItem from="1721199222098" duration="798000" />
+      <workItem from="1721201930027" duration="1540000" />
+      <workItem from="1727526005200" duration="2425000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/0_9807_DAYDAYUP__19855388966_$customize_service.coverage" NAME="customize_service 覆盖结果" MODIFIED="1721193091900" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/model" />
+  </component>
+</project>
