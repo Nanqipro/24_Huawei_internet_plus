@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="390" viewBox="0 0 1400 390" role="img" aria-labelledby="title desc">
+  <title id="title">GOODLAB 驾驶行为检测流水线</title>
+  <desc id="desc">驾驶视频依次经过抽帧与主驾驶区域裁剪、ONNX 推理、驾驶员目标过滤、帧级行为判断、三秒时序聚合，最终输出 JSON 事件区间。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f5fbff"/>
+      <stop offset="1" stop-color="#f8f6ff"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1598c7"/>
+      <stop offset="1" stop-color="#7656d8"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#507690"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="7" stdDeviation="8" flood-color="#14324a" flood-opacity=".12"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="390" rx="28" fill="url(#bg)"/>
+  <text x="58" y="62" fill="#17344a" font-family="Arial, 'PingFang SC', sans-serif" font-size="28" font-weight="800">从驾驶视频到可消费的行为事件</text>
+  <text x="58" y="94" fill="#668298" font-family="Arial, 'PingFang SC', sans-serif" font-size="15">实际代码路径 · 默认每秒采样 3 帧 · 连续 3 秒后报告事件</text>
+  <rect x="58" y="112" width="1284" height="3" rx="1.5" fill="url(#line)" opacity=".75"/>
+
+  <g font-family="Arial, 'PingFang SC', sans-serif" filter="url(#shadow)">
+    <g transform="translate(58 151)">
+      <rect width="178" height="146" rx="19" fill="#ffffff" stroke="#cbe5f0"/>
+      <circle cx="89" cy="42" r="22" fill="#dff6ff"/>
+      <path d="M78 33 L103 42 L78 51Z" fill="#168fb9"/>
+      <text x="89" y="88" fill="#17344a" font-size="17" font-weight="800" text-anchor="middle">驾驶视频</text>
+      <text x="89" y="115" fill="#668298" font-size="13" text-anchor="middle">MP4 / AVI</text>
+    </g>
+
+    <g transform="translate(278 151)">
+      <rect width="178" height="146" rx="19" fill="#ffffff" stroke="#cbe5f0"/>
+      <circle cx="89" cy="42" r="22" fill="#e6f6f1"/>
+      <path d="M74 31 H104 V53 H74Z" fill="none" stroke="#269a79" stroke-width="3"/>
+      <path d="M79 36 H99 M79 42 H99 M79 48 H92" stroke="#269a79" stroke-width="2"/>
+      <text x="89" y="88" fill="#17344a" font-size="17" font-weight="800" text-anchor="middle">抽帧与裁剪</text>
+      <text x="89" y="115" fill="#668298" font-size="13" text-anchor="middle">主驾驶区域</text>
+    </g>
+
+    <g transform="translate(498 151)">
+      <rect width="178" height="146" rx="19" fill="#ffffff" stroke="#d8d2f3"/>
+      <circle cx="89" cy="42" r="22" fill="#efebff"/>
+      <rect x="76" y="29" width="26" height="26" rx="5" fill="none" stroke="#7556d4" stroke-width="3"/>
+      <path d="M82 35 H96 V49 H82Z" fill="#7556d4" opacity=".25"/>
+      <text x="89" y="88" fill="#17344a" font-size="17" font-weight="800" text-anchor="middle">ONNX 推理</text>
+      <text x="89" y="115" fill="#668298" font-size="13" text-anchor="middle">320 × 320</text>
+    </g>
+
+    <g transform="translate(718 151)">
+      <rect width="178" height="146" rx="19" fill="#ffffff" stroke="#d8d2f3"/>
+      <circle cx="89" cy="42" r="22" fill="#fff0f8"/>
+      <rect x="73" y="28" width="32" height="28" rx="4" fill="none" stroke="#cf4f91" stroke-width="3"/>
+      <circle cx="89" cy="39" r="6" fill="#cf4f91" opacity=".38"/>
+      <path d="M78 53 Q89 43 100 53" fill="none" stroke="#cf4f91" stroke-width="3"/>
+      <text x="89" y="88" fill="#17344a" font-size="17" font-weight="800" text-anchor="middle">驾驶员过滤</text>
+      <text x="89" y="115" fill="#668298" font-size="13" text-anchor="middle">面积 + IoU</text>
+    </g>
+
+    <g transform="translate(938 151)">
+      <rect width="178" height="146" rx="19" fill="#ffffff" stroke="#ead9c6"/>
+      <circle cx="89" cy="42" r="22" fill="#fff5e6"/>
+      <path d="M75 48 L83 39 L90 46 L102 33" fill="none" stroke="#c47c20" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="75" cy="48" r="3" fill="#c47c20"/>
+      <circle cx="102" cy="33" r="3" fill="#c47c20"/>
+      <text x="89" y="88" fill="#17344a" font-size="17" font-weight="800" text-anchor="middle">时序聚合</text>
+      <text x="89" y="115" fill="#668298" font-size="13" text-anchor="middle">连续 ≥ 3 秒</text>
+    </g>
+
+    <g transform="translate(1158 151)">
+      <rect width="184" height="146" rx="19" fill="#17344a" stroke="#17344a"/>
+      <circle cx="92" cy="42" r="22" fill="#2c516b"/>
+      <text x="92" y="49" fill="#aeefff" font-size="19" font-weight="800" text-anchor="middle">{ }</text>
+      <text x="92" y="88" fill="#ffffff" font-size="17" font-weight="800" text-anchor="middle">JSON 事件</text>
+      <text x="92" y="115" fill="#b8d2e1" font-size="13" text-anchor="middle">类别 + 时间区间</text>
+    </g>
+  </g>
+
+  <g stroke="#507690" stroke-width="2" marker-end="url(#arrow)">
+    <path d="M240 224 H266"/>
+    <path d="M460 224 H486"/>
+    <path d="M680 224 H706"/>
+    <path d="M900 224 H926"/>
+    <path d="M1120 224 H1146"/>
+  </g>
+
+  <g font-family="Arial, 'PingFang SC', sans-serif" font-size="13" fill="#58768b">
+    <text x="58" y="343">检测线索：人脸 · 手机 · 睁/闭眼 · 打哈欠/闭嘴 · 转头/低头</text>
+    <text x="1342" y="343" text-anchor="end">输出事件：闭眼 · 打哈欠 · 使用手机 · 转头</text>
+  </g>
+</svg>
+

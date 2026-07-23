@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "goodlab-fatigue-detection"
+version = "0.1.0"
+description = "GOODLAB's ONNX video pipeline for driver fatigue and distraction detection."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+  { name = "Nanchang University GOODLAB Team" }
+]
+dependencies = [
+  "numpy>=1.23,<3",
+  "onnxruntime>=1.16,<2",
+  "opencv-python-headless>=4.8,<5",
+]
+
+[project.scripts]
+goodlab-fatigue = "goodlab_fatigue_detection.cli:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+

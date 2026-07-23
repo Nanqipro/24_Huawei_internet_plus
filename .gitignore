@@ -1,0 +1,52 @@
+# Operating systems
+.DS_Store
+**/.DS_Store
+._*
+Thumbs.db
+Desktop.ini
+
+# Editors and local agents
+.idea/
+.vscode/
+.cursor/
+.claude/
+.codex/
+*.code-workspace
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+build/
+dist/
+*.egg-info/
+
+# Secrets and machine-local configuration
+.env
+.env.*
+!.env.example
+credentials.csv
+credentials-*.csv
+*.pem
+*.p12
+*.pfx
+
+# Local data and generated outputs
+/data/*
+!/data/README.md
+/outputs/
+/runs/
+*.log
+
+# ModelArts deployment bundles
+/deployment/modelarts/dist/
+*.zip
+

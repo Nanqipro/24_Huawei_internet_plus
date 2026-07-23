@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="560" viewBox="0 0 1440 560" role="img" aria-labelledby="title desc">
+  <title id="title">GOODLAB 驾驶员疲劳与分心行为检测项目封面</title>
+  <desc id="desc">左侧为项目名称和赛事信息，右侧为驾驶员视频检测与行为事件时间线示意图。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071526"/>
+      <stop offset="0.52" stop-color="#102a43"/>
+      <stop offset="1" stop-color="#17153c"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#55d7ff"/>
+      <stop offset="1" stop-color="#9b7cff"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1440" height="560" rx="34" fill="url(#bg)"/>
+  <circle cx="1260" cy="44" r="240" fill="#6049a8" opacity=".13"/>
+  <circle cx="1060" cy="548" r="300" fill="#0ab7d5" opacity=".10"/>
+  <path d="M0 448 C270 350 420 560 735 448 S1180 350 1440 425 V560 H0Z" fill="#ffffff" opacity=".025"/>
+
+  <g transform="translate(84 82)">
+    <rect width="126" height="34" rx="17" fill="#123b55" stroke="#55d7ff" stroke-opacity=".55"/>
+    <circle cx="20" cy="17" r="5" fill="#55d7ff"/>
+    <text x="35" y="22" fill="#bfefff" font-family="Arial, 'PingFang SC', sans-serif" font-size="15" font-weight="700" letter-spacing="1.4">GOODLAB</text>
+
+    <text x="0" y="106" fill="#ffffff" font-family="Arial, 'PingFang SC', sans-serif" font-size="54" font-weight="800">驾驶员疲劳与分心</text>
+    <text x="0" y="173" fill="url(#accent)" font-family="Arial, 'PingFang SC', sans-serif" font-size="54" font-weight="800">行为检测</text>
+    <text x="0" y="222" fill="#abc4d6" font-family="Arial, 'PingFang SC', sans-serif" font-size="21">视频采样 · ONNX Runtime · 时序事件聚合</text>
+
+    <g transform="translate(0 274)">
+      <rect width="500" height="1" fill="#8eb3ca" opacity=".25"/>
+      <text x="0" y="45" fill="#ffffff" font-family="Arial, 'PingFang SC', sans-serif" font-size="20" font-weight="700">南昌大学 GOODLAB 团队</text>
+      <text x="0" y="80" fill="#92aec3" font-family="Arial, 'PingFang SC', sans-serif" font-size="17">2024 华为云互联网+创新大赛 · 全国三等奖</text>
+    </g>
+
+    <g transform="translate(0 400)" font-family="Arial, 'PingFang SC', sans-serif" font-size="14" font-weight="700">
+      <rect width="108" height="34" rx="17" fill="#1d3a4d"/>
+      <text x="54" y="22" fill="#c7f5ff" text-anchor="middle">闭眼</text>
+      <rect x="120" width="108" height="34" rx="17" fill="#2b3158"/>
+      <text x="174" y="22" fill="#e2dbff" text-anchor="middle">打哈欠</text>
+      <rect x="240" width="108" height="34" rx="17" fill="#442f52"/>
+      <text x="294" y="22" fill="#ffd7f6" text-anchor="middle">使用手机</text>
+      <rect x="360" width="108" height="34" rx="17" fill="#3e393d"/>
+      <text x="414" y="22" fill="#ffe8c7" text-anchor="middle">转头</text>
+    </g>
+  </g>
+
+  <g transform="translate(718 66)">
+    <rect width="630" height="428" rx="28" fill="#06101c" fill-opacity=".74" stroke="#b4dded" stroke-opacity=".18"/>
+    <rect x="26" y="24" width="578" height="292" rx="20" fill="#0c1c2a"/>
+    <circle cx="52" cy="49" r="5" fill="#ff718c"/>
+    <circle cx="70" cy="49" r="5" fill="#ffd365"/>
+    <circle cx="88" cy="49" r="5" fill="#5be0b5"/>
+    <text x="118" y="54" fill="#7695aa" font-family="Arial, sans-serif" font-size="12" letter-spacing="1.2">FRAME 0084 · 00:02.8</text>
+
+    <path d="M48 270 Q175 215 302 278 T578 256 V292 H48Z" fill="#172c3c"/>
+    <path d="M392 80 C435 80 463 116 463 162 V252 H324 V176 C324 123 345 80 392 80Z" fill="#203b4b"/>
+    <circle cx="394" cy="137" r="51" fill="#8ca4b0"/>
+    <path d="M358 129 Q394 96 430 129 L426 111 Q394 78 360 108Z" fill="#253846"/>
+    <path d="M350 234 Q390 174 438 234" fill="none" stroke="#8ca4b0" stroke-width="56" stroke-linecap="round"/>
+    <path d="M290 292 Q327 222 371 212" fill="none" stroke="#5f7786" stroke-width="20" stroke-linecap="round"/>
+    <circle cx="515" cy="240" r="55" fill="none" stroke="#37576a" stroke-width="12"/>
+    <circle cx="515" cy="240" r="9" fill="#37576a"/>
+
+    <rect x="337" y="88" width="116" height="116" rx="8" fill="none" stroke="#55d7ff" stroke-width="3" filter="url(#glow)"/>
+    <rect x="337" y="66" width="86" height="22" rx="5" fill="#55d7ff"/>
+    <text x="380" y="81" fill="#04121c" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" font-weight="800">FACE 0.96</text>
+    <rect x="365" y="128" width="28" height="13" rx="3" fill="none" stroke="#ffcf66" stroke-width="2"/>
+    <rect x="398" y="128" width="28" height="13" rx="3" fill="none" stroke="#ffcf66" stroke-width="2"/>
+    <rect x="365" y="107" width="93" height="20" rx="5" fill="#ffcf66"/>
+    <text x="411" y="121" fill="#1a1200" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="800">CLOSED EYES</text>
+
+    <g transform="translate(42 344)" font-family="Arial, 'PingFang SC', sans-serif">
+      <text x="0" y="13" fill="#7895a9" font-size="12" letter-spacing="1">EVENT TIMELINE</text>
+      <rect x="0" y="32" width="536" height="10" rx="5" fill="#1d3443"/>
+      <rect x="18" y="32" width="128" height="10" rx="5" fill="#55d7ff"/>
+      <rect x="203" y="32" width="88" height="10" rx="5" fill="#9b7cff"/>
+      <rect x="371" y="32" width="122" height="10" rx="5" fill="#ff7cbd"/>
+      <text x="0" y="70" fill="#a4bdcc" font-size="12">0s</text>
+      <text x="250" y="70" fill="#a4bdcc" font-size="12">5s</text>
+      <text x="514" y="70" fill="#a4bdcc" font-size="12">10s</text>
+    </g>
+  </g>
+</svg>
+

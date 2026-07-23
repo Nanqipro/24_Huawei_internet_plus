@@ -1,0 +1,55 @@
+{
+  "model_algorithm": "video_classification",
+  "model_type": "PyTorch",
+  "runtime": "python3.9",
+  "apis": [
+    {
+      "protocol": "http",
+      "url": "/",
+      "method": "POST",
+      "request": {
+        "Content-type": "multipart/form-data",
+        "data": {
+          "type": "object",
+          "properties": {
+            "input_video": {
+              "type": "file"
+            }
+          },
+          "required": [
+            "input_video"
+          ]
+        }
+      },
+      "response": {
+        "Content-type": "application/json",
+        "data": {
+          "type": "object"
+        }
+      }
+    }
+  ],
+  "dependencies": [
+    {
+      "installer": "pip",
+      "packages": [
+        {
+          "package_name": "numpy",
+          "package_version": "",
+          "restraint": ""
+        },
+        {
+          "package_name": "onnxruntime",
+          "package_version": "",
+          "restraint": ""
+        },
+        {
+          "package_name": "opencv-python-headless",
+          "package_version": "",
+          "restraint": ""
+        }
+      ]
+    }
+  ]
+}
+
