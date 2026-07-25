@@ -4,7 +4,7 @@
 
 # GOODLAB 驾驶员疲劳与分心行为检测
 
-南昌大学 GOODLAB 团队参加 **2024 华为云互联网+创新大赛**并获**全国三等奖**的参赛项目源码。项目从驾驶视频中提取视觉线索，通过 ONNX Runtime 推理与时序规则，定位闭眼、打哈欠、使用手机和转头等持续行为。
+南昌大学泛在数据分析与优化实验室（**GOODLAB，Generic Operational and Optimal Data Lab**）团队参加 **2024 华为云互联网+创新大赛**并获**全国三等奖**的参赛项目源码。项目从驾驶视频中提取视觉线索，通过 ONNX Runtime 推理与时序规则，定位闭眼、打哈欠、使用手机和转头等持续行为。
 
 > [!IMPORTANT]
 > 这是经过开源整理的赛事原型，不是通过车规认证的安全产品。检测结果不能替代驾驶员监控系统、车辆安全策略或人工判断。
@@ -183,7 +183,9 @@ PYTHONPATH=src python -m unittest discover -s tests -v
 
 ## 团队与致谢
 
-- 参赛团队：南昌大学 GOODLAB
+- 参赛团队：南昌大学泛在数据分析与优化实验室（GOODLAB）
+- 英文全称：Generic Operational and Optimal Data Lab
+- 团队官网：[GOODLAB 官方网站](https://good.ncu.edu.cn/)
 - 赛事：2024 华为云互联网+创新大赛
 - 成绩：全国三等奖
 
